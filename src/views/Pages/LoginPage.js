@@ -7,7 +7,7 @@ import Icon from "@material-ui/core/Icon";
 
 // @material-ui/icons
 import Face from "@material-ui/icons/Face";
-import Email from "@material-ui/icons/Email";
+//import Email from "@material-ui/icons/Email";
 // import LockOutline from "@material-ui/icons/LockOutline";
 
 // core components
@@ -40,8 +40,8 @@ export default function LoginPage() {
                 className={`${classes.cardHeader} ${classes.textCenter}`}
                 color="rose"
               >
-                <h4 className={classes.cardTitle}>Log in</h4>
-                <div className={classes.socialLine}>
+                <h4 className={classes.cardTitle}>Accedi a MEAP</h4>
+                {/*<div className={classes.socialLine}>
                   {[
                     "fab fa-facebook-square",
                     "fab fa-twitter",
@@ -58,12 +58,12 @@ export default function LoginPage() {
                       </Button>
                     );
                   })}
-                </div>
+                </div>*/}
               </CardHeader>
               <CardBody>
                 <CustomInput
-                  labelText="First Name.."
-                  id="firstname"
+                  labelText="Username"
+                  id="username"
                   formControlProps={{
                     fullWidth: true
                   }}
@@ -75,7 +75,7 @@ export default function LoginPage() {
                     )
                   }}
                 />
-                <CustomInput
+                {/*<CustomInput
                   labelText="Email..."
                   id="email"
                   formControlProps={{
@@ -88,7 +88,7 @@ export default function LoginPage() {
                       </InputAdornment>
                     )
                   }}
-                />
+                />*/}
                 <CustomInput
                   labelText="Password"
                   id="password"
@@ -110,7 +110,7 @@ export default function LoginPage() {
               </CardBody>
               <CardFooter className={classes.justifyContentCenter}>
                 <Button color="rose" simple size="lg" block>
-                  Let{"'"}s Go
+                  Accedi
                 </Button>
               </CardFooter>
             </Card>

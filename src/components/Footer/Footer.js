@@ -32,7 +32,7 @@ export default function Footer(props) {
   return (
     <footer className={classes.footer}>
       <div className={container}>
-        <div className={classes.left}>
+      <div className={classes.left}>
           <List className={classes.list}>
             <ListItem className={classes.inlineBlock}>
               <a href="#home" className={block}>
@@ -59,15 +59,13 @@ export default function Footer(props) {
         <p className={classes.right}>
           &copy; {1900 + new Date().getYear()}{" "}
           <a
-            href="https://www.creative-tim.com?ref=mdpr-footer"
+            href="https://sharpfour.eu"
             className={anchor}
             target="_blank"
           >
-            {rtlActive ? "توقيت الإبداعية" : "Creative Tim"}
+            SharpFour 
           </a>
-          {rtlActive
-            ? ", مصنوعة مع الحب لشبكة الإنترنت أفضل"
-            : ", made with love for a better web"}
+          &nbsp;&nbsp;Versione 1.0.0
         </p>
       </div>
     </footer>
